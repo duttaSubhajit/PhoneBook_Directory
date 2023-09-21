@@ -1,0 +1,8 @@
+<h1>Edit Contact</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="name" value="{{ contact.name }}">
+    <input type="text" name="phone_number" value="{{ contact.phone_number }}">
+    <button type="submit">Update</button>
+</form>

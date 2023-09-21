@@ -1,0 +1,8 @@
+<h1>Add Contact</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="phone_number" placeholder="Phone Number">
+    <button type="submit">Add</button>
+</form>
